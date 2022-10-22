@@ -1,0 +1,121 @@
+// 1-O que é um paradigma de programação? Dê dois exemplos de paradigmas?
+
+um paradigma de programação é o que determina a visão que o programador terá na hora de estruturar e desenvolver o seu software 
+exs: paradigma procedural e paradigma orientado a objetos 
+
+// 2-Comente sobre como a adoção de determinado paradigma pode afetar a forma de se desenvolver um sistema de software.
+
+de acordo com o objetivo de seu software, a adoção de certo paradigma pode facilitar assim como dicultar o trabalho do desenvolvedor, então através de um planejamento antecipado o dev pode estar optando pelo paradigma que melhor executaria seu objetivo, um jogo não poderia ser criado apenas com programação procedural por exemplo. mas as vezes coisas simples não precisam de um programa orientado a objetos para funcionar de maneira extremamente eficiente. tudo depende da visão que o dev tem sobre o problema e também do objetivo dele.
+
+// 3-Descreva o que vem a ser o paradigma de orientação a objetos?
+
+o paradigma orientado a objetos é um software que organiza uma coleção de objetos que interagem entre si.
+
+// 4-Cite algumas vantagens do paradigma de orientação a objetos
+
+reduz a complexidade por meio de melhoria do grau de abstração 
+melhora a produtividade a longo prazo, permitindo o uso da reutilização pelos desenvolvedores
+torna mais fácil a comunicaão entre clientes e desenvolvedores 
+maior facilidade de manutenção 
+gerenciamento simplificado em  função da quebra das aplicações em unidades menores e mais bem definidas 
+maximiza  a reutilização de código 
+reduz esforço de codificação 
+reduz teste, melhora confiabilidade
+
+// 5 - No contexto do desenvolvimento de software, o que é modularização e módulo ? 
+
+a modularização é uma forma de como o código é estruturado, criando pequenos modulos ou pedaços de códigos, e separando eles. Ou seja, vc tem um código grande e dificil de manutenção, se modulizando ele vc divide ele em pequenos arquivos para que consiga ter um entendimento mais simplificado.
+
+módulo > elemento mantido pela equipe de desenvolvimento que fornece e usa servições de outros elementos do software
+
+. podem ser compostos por funções, ou procedimentos
+. possui interface reduzida, portanto:
+
+- REUSAVEL ( apto a ser incorporado em muitos programas )
+- MODIFICAVEL (pode ser alterado sem forçar grandes modificações nos outros módulos )
+
+// 6 - Quais as caracteristicas de um módulo bem projetado ?
+
+    Ocultamento de informação
+    Independencia funcional
+     - Coesão alta 
+     - Acoplamento baixo
+
+// 7 - Quais são as vantagens da modularização...
+
+ - Reduz a complexidade
+ - Economia de código
+ - Desenvolvimento Modularizado
+ - Facilidade de depuração ( correção/acompanhamento )
+ - Facilidade de alteração do código
+ - Generalidade de código com o uso de parâmetros
+ - Aumento de produtividade
+
+// 8 - Explique as diferenças entre a programação em grande escala e a prog em baixa escala...
+
+ A programação em grande escala é modularizada para que uma grande equipe possa trabalhar no código, carregando consigo todas as vantagens que uma modularização tem. Já a programação em baixa escala, os programadores já tem conhecimento amplo sobre o sistema, conhecendo todos os detales sobre ele, organizando sua maneira de trabalho de acordo com suas preferencias.
+
+// 9 - O que é abstração ?
+
+ - Capacidade de ignorar detalhes das partes para focalizar a atenção em um nível mais elevado de um problema.
+
+// 10 - Por que programação em grande escalada requer habilidades de abstração ? 
+
+ 
+
+ // 11 - Supermodularidade e Submodularidade 
+
+  - Submodularidade: módulos grandes e caros, além de difíceis de entender e modificar devido a sua estrutura monolítica 
+  - Supermodularidade: infinidade de pequenos módulos com custo elevado devido a necessidade de integração entre os módulos.
+
+// 12 - Ocultamento de informação...
+ 
+ - Ocultamento de informação seria não deixar visivel para o publico ou para usuários, dados e informações livres para alteração ou visibilidade. É importante que certos dados não sejam visiveis para todos. Como salários de um cargo ou a fórmula do calculo de um certo imposto. 
+
+// 13 - 
+
+// 14 - Módulos e Subsistemas de um carro 
+
+ - Motor
+ - Volante
+ - Bancos 
+ - Portas
+ - Faróis
+ - Freios 
+ - Painel 
+
+// 15 -
+
+// 16 - O que é Acoplamento e Coesão 
+
+ - Acoplamento diz respeito à Independencia de um módulo ao outro. O quão "amarrado" um parte do sistema é com as outras partes 
+
+ - Coesão : medida da unidade funcional relativa de um módulo, indicação qualitativa do grau.
+    . Um módulo coeso realiza uma UNICA tarefa dentro de um processedimento do software, portanto quanto maior o grau de coesão, maior a sua Independencia funcional, passando a executar apenas uma tarefa especifica
+
+// 17 
+  - Mantemos uma Independencia dos módulos muito alta, tendo todas as vantagens possiveis de um bom sistema em larga escala modular. Podendo assim ter uma facilidade como um todo de estar mexendo no código.
+
+// 18 
+
+  a) Coesão Coincidente
+  b) Coesão Temporal
+
+  classe contrutor
+
+  c) Coesão Sequencial
+
+    classe verificaLimiteCredito {
+      se (limite == true) {
+        efetuarSaque
+      } senão {
+        bloquearSaque
+      }
+    }
+
+  d) Coesão Lógica
+  e) Coesão Comunicacional 
+  f) Coesão Funcional
+
+// 19 
+
