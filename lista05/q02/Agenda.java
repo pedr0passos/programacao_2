@@ -1,9 +1,15 @@
-package lista05;
+package lista05.q02;
 
 public class Agenda {
 
     static private int k = 0;
     private Pessoa[] p = new Pessoa[10];
+
+    public Agenda () {
+        for (int i = 0; i < 10; i++) {
+            p[i] = new Pessoa();
+        }
+    }
 
     public void armazenaPessoa(String nome, int idade, double altura) {
         if ( k < 10 ) {

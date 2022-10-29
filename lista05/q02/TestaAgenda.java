@@ -1,4 +1,4 @@
-package lista05;
+package lista05.q02;
 import java.util.Scanner;
 
 public class TestaAgenda {
@@ -9,7 +9,7 @@ public class TestaAgenda {
 
         boolean decisao = true;
         int escolha, idade, posicao;
-        String nome;
+        String nome = new String();
         double altura;
 
         while (decisao) {

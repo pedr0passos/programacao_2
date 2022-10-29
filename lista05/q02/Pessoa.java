@@ -1,4 +1,4 @@
-package lista05;
+package lista05.q02;
 
 public class Pessoa {
     
