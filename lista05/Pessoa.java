@@ -19,24 +19,21 @@ public class Pessoa {
     }
     //setters:
     public void setNome (String nome) {
-        if ( !nome.equals("")) {
-            this.nome = nome;
-        } else {
-            System.out.println("Nome Inválido!");
-        }
+        this.nome = nome;
     }
+
     public void setIdade (int idade) {
         if ( idade >= -1 ) {
             this.idade = idade;
         } else {
-            System.out.println("Idade Inválida!");
+            System.out.println("Idade Invalida!");
         }
     }
     public void setAltura (double altura) {
         if ( altura >= -1 ) {
             this.altura = altura;
         } else {
-            System.out.println("Altura Inválida!");
+            System.out.println("Altura Invalida!");
         }
     }
     // imprime os dados da pessoa
