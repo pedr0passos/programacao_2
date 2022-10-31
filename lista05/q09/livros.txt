@@ -1,0 +1,37 @@
+Suponha que as classes LivroLivraria e LivroBiblioteca estendam a classe Livro. Quais as diferenças entre as duas classes, e que campos elas têm em comum ?
+
+R:
+
+A classe Livro possui:
+
+// atributos:
+    - titulo
+    - autor
+    - quantidadePaginas
+
+// não possui nenhum método // 
+
+A classe LivroBiblioteca possui: 
+
+// atributos: 
+    - titulo
+    - autor
+    - quantidadePaginas
+    - preco
+// não possui nenhum método //
+
+A classe LivroLivraria possui: 
+
+// atributos : 
+    - titulo
+    - autor
+    - quantidadePaginas
+    - dataEmprestimo
+    - dataVencimento
+
+// não possui nenhum método //
+
+ - As classes tem em comum -> titulo, autor, quantidadePaginas
+ - As classes tem de diferenças -> preco, dataEmprestimo e dataVencimento
+
+ Portanto a classe livro teria apenas os atributos em comuns que seria -> titulo, autor, quantidadePaginas. E as outras duas classes herdariam esses atributos dela, e elas teriam apenas os atributos preco ( LivroLivraria ) e dataEmprestimo e dataVencimento ( LivroBiblioteca ).
