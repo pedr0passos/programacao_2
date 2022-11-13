@@ -20,14 +20,12 @@ public class Dvd extends Midia {
     }
 
     public Dvd () {
-        this(0,0.0,"Nenhum", 0);
+        this(0,0,"Nenhum", 0);
     }
 
     public Dvd ( int c, double p, String s, int f ) {
-        this.setCodigo(c);
-        this.setNome(s);
-        this.setPreco(p);
-        this.numeroFaixas = f; 
+        super(c, p, s);
+        setNumeroFaixas(f);
     }
 
     @Override
@@ -37,18 +35,22 @@ public class Dvd extends Midia {
 
     @Override
     public String getDetalhes() {
-        return ( "Nome: " + getNome() + " Preco: " + getPreco() + " Código: " + getCodigo());
+        return ( "Nome: " + getNome() + " Preco: " + getPreco() + " Codigo: " + getCodigo());
     }
 
     @Override
     public void inserirDados () {
-        // aproveitando o código já pronto da sua superclasse
+        // aproveitando o codigo ja pronto da sua superclasse
         super.inserirDados();
-        // criando um novo scanner para pegar apenas a informação adicional da classe dvd
+        
+        // criando um novo scanner para pegar apenas a informacao adicional da classe dvd
         Scanner s = new Scanner(System.in);
-        System.out.print("Digite o número de faixas: ");
-        int nF = s.nextInt();
+        int numFaixas;
+        
+        System.out.println("Digite o numero de faixas: ");
+        numFaixas = s.nextInt();
+        setNumeroFaixas(numFaixas);
 
-        setNumeroFaixas(nF);
+        
     }
 }

@@ -33,9 +33,9 @@ public class Midia {
         this.nome = nome;
     }
 
-    //métodos
+    //metodos
     public Midia () {
-        super();
+        this(0,0, "Nenhum");
     }
     public Midia ( int c, double p, String n ) {
         this.codigo = c;
@@ -48,23 +48,28 @@ public class Midia {
     }
 
     public String getDetalhes () {
-        return ("Nome: " + getNome() + " Preco: " + getPreco() + " Código: " + getCodigo() );
+        return ("Nome: " + getNome() + " Preco: " + getPreco() + " Codigo: " + getCodigo() );
     }
 
     public void printDados () {
-        System.out.println("Nome: " + nome + " Código: " + codigo + " Preço: " + preco  );
+        System.out.println("Nome: " + nome + " Codigo: " + codigo + " Preco: " + preco  );
 
     }
     
     public void inserirDados () {
+
         Scanner s = new Scanner(System.in);
+        String nome;
+        int cod;
+        double prec;
+
 
         System.out.println("Digite o nome: ");
-        String nome = s.next();
-        System.out.println("Digite o código: ");
-        int cod = s.nextInt();
+        nome = s.next();
+        System.out.println("Digite o codigo: ");
+        cod = s.nextInt();
         System.out.println("Digite o preco: ");
-        double prec = s.nextDouble();
+        prec = s.nextDouble();
 
         setCodigo(cod);
         setNome(nome);
