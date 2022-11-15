@@ -2,9 +2,16 @@ package lista05.q13;
 
 public class Imovel {
     
+    //propriedades 
     private String endereco;
     private double preco;
 
+    public Imovel (String e, double p) {
+        this.endereco = e;
+        this.preco = p;
+    }
+
+    //setters e getters
     public String getEndereco() {
         return this.endereco;
     }
@@ -21,6 +28,12 @@ public class Imovel {
         this.preco = preco;
     }
 
-    
+    public double calculaPreco () {
+        return this.getPreco();
+    }
+
+    public void printDados() {
+        System.out.println("Dados : \n Preco: " + getPreco() + "\n" + "Endereco: " + getEndereco());
+    }
 
 }

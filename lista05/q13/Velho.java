@@ -4,16 +4,12 @@ public class Velho extends Imovel{
     
     private double desconto;
 
-    public double getDesconto() {
+    public double getDesconto () {
         return this.desconto;
     }
 
-    public void setDesconto(double desconto) {
-        this.desconto = desconto;
-    }
-
-    public void imprimeDesconto () {
-        System.out.println("Desconto: " + desconto);
+    public void printDesconto () {
+        System.out.println("Desconto: " + this.desconto);
     }
 
 }
