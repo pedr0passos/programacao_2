@@ -9,7 +9,7 @@ public class Sorteio {
         while ( i < 6 ) {
             repete = false;
             n = (int)(Math.random()*10) + 1;
-            for ( int j = 0; j < i; j++ ) {
+            for ( int j = 0; j < i; ) {
                 if ( numeros[j] == n )
                     repete = true;
                     break;
@@ -20,7 +20,7 @@ public class Sorteio {
         }
     }
     public void listaSorteio () {
-        System.out.println("Números Sorteados:");
+        System.out.println("Nï¿½meros Sorteados:");
         int i = 0;
         for ( int val : numeros ) {
             i++;

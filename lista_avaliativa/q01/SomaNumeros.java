@@ -22,7 +22,9 @@ public class SomaNumeros {
             System.out.println("Valor Informado não é númerico!");
         } catch (ArithmeticException e) {
             System.out.println("Divisão por Zero, Tente Novamente!");
-        } 
+        } finally {
+            scan.close();
+        }
 
     }
 }
