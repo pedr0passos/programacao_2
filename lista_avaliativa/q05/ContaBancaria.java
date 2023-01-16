@@ -22,7 +22,19 @@ public class ContaBancaria {
     }
 
     public boolean sacar (double valor) throws ContaException {
-        
+        if ( valor <= getSaldoComLimite() && valor < 500 ) 
+            return true;
+        return false;
     }
+
+    public void depositar(double valor) throws ContaException {
+        if ( valor < 1000 )
+            saldo = saldo+valor;
+        else 
+            throw new ContaException("Deposito maior que R$1000,00");
+    }
+
+
+
 
 }
