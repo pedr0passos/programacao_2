@@ -22,8 +22,10 @@ public class ContaBancaria {
     }
 
     public boolean sacar (double valor) throws ContaException {
-        if ( valor <= getSaldoComLimite() && valor < 500 ) 
+        if ( valor <= getSaldoComLimite() && valor < 500 ) {
+            saldo = saldo - valor;
             return true;
+        }
         return false;
     }
 

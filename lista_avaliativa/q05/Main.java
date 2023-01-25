@@ -11,8 +11,7 @@ public class Main {
         nova.depositar(700);
         System.out.println(nova.getSaldo());
         System.out.print("Sacando Dinheiro da Conta ");
-        if (nova.sacar(123))
-            nova.depositar(-123);
+        nova.sacar(123);
         System.out.println(nova.getSaldo());
     }
 }

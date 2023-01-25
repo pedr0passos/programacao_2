@@ -1,0 +1,7 @@
+Ao compilar o programa de teste, ocorre o seguinte erro:
+
+"Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
+        Unhandled exception type MinhaExcecao"
+
+Seguindo a ordem das linhas do código, é criada uma exceção nova chamada "me" inicializando como "null", e também um método estático que lança uma exceção do tipo MinhaExcecao. Após entrar no bloco "try", é lançado através do metodo "teste()" a exceção criada, e o bloco "catch" captura essa exceção, fazendo com que a exceção "me" receba a exceção capturada, e teoricamente printaria na tela a mensagem "catch".
+Em seguida o bloco "finally" lança uma exceção, porém não possui nenhuma forma de captura-lá, pois foi lançada após o bloco de catch.

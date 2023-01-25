@@ -24,7 +24,7 @@ public class Login {
                 throw new Exception("Senha Incorreta");
             }
         } catch ( Exception e ) {
-            System.out.println("Erro!");
+            System.out.println(e.getMessage());
         }
         return false;
     }

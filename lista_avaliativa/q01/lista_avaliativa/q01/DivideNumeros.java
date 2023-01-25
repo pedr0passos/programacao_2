@@ -3,20 +3,17 @@ package lista_avaliativa.q01;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class SomaNumeros {
-    public static void main(String[] args) {
+public class DivideNumeros {
+    public void divide() {
         
-        int n1;
-        int n2;
-        int div;
         Scanner scan = new Scanner(System.in);
 
         try {
             System.out.print("Numero1: ");
-            n1 = scan.nextInt();
+            int n1 = scan.nextInt();
             System.out.print("Numero2: ");
-            n2 = scan.nextInt();
-            div = (n1/n2);
+            int n2 = scan.nextInt();
+            int div = (n1/n2);
             System.out.println("Resultado: " + div);
         } catch(InputMismatchException e) {
             System.out.println("Valor Informado não é númerico!");
